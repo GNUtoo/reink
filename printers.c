@@ -169,7 +169,26 @@ printer_t printers[] = {
 			.len =                          4,
 			.addr =                         {0x08, 0x09, 0x0a, 0x0b},
 		},
-	}
+	},
+	[PM_XP700] = {
+		.name = "Epson Expression Premium XP-700",
+		.model_name = "XP-700 Series",
+		.model_code = {0x28, 0x00},
+		.twobyte_addresses = 1,
+		.inkmap = {
+			.mask = 		INK_BLACK | INK_CYAN | INK_YELLOW | INK_MAGENTA | INK_PHOTOBLACK,
+			.black = 		{0x00, 0x00, 0x00, 0x00},
+			.cyan = 		{0x00, 0x00, 0x00, 0x00},
+			.magenta = 		{0x00, 0x00, 0x00, 0x00},
+			.yellow = 		{0x00, 0x00, 0x00, 0x00},
+			.photoblack = 		{0x00, 0x00, 0x00, 0x00},
+		},
+		.wastemap = {
+			.len = 			0,
+			.addr =			{0x00, 0x00, 0x00, 0x00},
+		},
+	},
+
 };
 
 const unsigned int printers_count = sizeof(printers) / sizeof(printers[0]);

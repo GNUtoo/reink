@@ -25,6 +25,7 @@
 #define PM_SPT50		5	//EPSON Stylus Photo T50
 #define PM_SPP50		6	//EPSON Stylus Photo P50
 #define PM_XP630		7	//EPSON Expression Premium XP-630
+#define PM_XP700		8	//EPSON XP-700
 
 //ink counters EEPROM map
 #define INK_BLACK                       0x01
